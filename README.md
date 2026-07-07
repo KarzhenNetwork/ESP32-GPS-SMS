@@ -16,7 +16,7 @@ When you call the tracker, it immediately rejects the call, waits for a valid GP
 * **Microcontroller:** ESP32 Node32S
 * **GSM Module:** SIM800L (with an active SIM card)
 * **GPS Module:** NEO-6M
-* **Power Supply:** 12V Car Battery
+* **Power Supply:** 12V
 * **Power Regulation:** 2x LM2596 Buck Converters
 * **Capacitor:** 1000µF (placed across the SIM800L power pins to handle 2A transmission spikes)
 
@@ -85,6 +85,4 @@ This project solves that by using a **Single Centralized Parser**.
 🐛 Troubleshooting
 1. Module keeps restarting / LED blinks fast endlessly: The SIM800L isn't getting enough current. Check your 4.0V buck converter and ensure the 1000µF capacitor is wired closely to the module's VCC and GND.
 
-2. SMS is never received: Check the serial monitor at 115200 baud. Ensure the module is registering on the network and returning +CLIP when called.
-
-3. GPS coordinates are 0.0000: The NEO-6M needs a clear view of the sky to get a fix. Take it outside. If the tracker can't get a fix within 10 seconds, it will send a fallback SMS stating the signal is unavailable.
+2. GPS coordinates are 0.0000: The NEO-6M needs a clear view of the sky to get a fix. Take it outside. If the tracker can't get a fix within 10 seconds, it will send a fallback SMS stating the signal is unavailable.

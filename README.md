@@ -24,7 +24,7 @@ When you call the tracker, it immediately rejects the call, waits for a valid GP
 
 ## 🔌 Wiring & Schematic
 
-![Project Wiring Diagram](./diagram.png) 
+![Project Wiring Diagram](./esp32Diagram.pdf) 
 *(Note: Replace `diagram.png` with the actual filename of your uploaded image in the repository.)*
 
 ### Pin Connections

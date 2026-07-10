@@ -30,10 +30,10 @@ When you call the tracker, it immediately rejects the call, waits for a valid GP
 ### Pin Connections
 | Component | Pin | ESP32 Pin | Notes |
 | :--- | :--- | :--- | :--- |
-| **NEO-6M GPS** | TX | `GPIO 16` (RX1) | |
-| **NEO-6M GPS** | RX | `GPIO 17` (TX1) | |
-| **SIM800L** | TX | `GPIO 27` (RX2) | |
-| **SIM800L** | RX | `GPIO 26` (TX2) | |
+| **NEO-6M GPS** | TX | `GPIO 16` (RX2) | |
+| **NEO-6M GPS** | RX | `GPIO 17` (TX2) | |
+| **SIM800L** | TX | `GPIO 27` | |
+| **SIM800L** | RX | `GPIO 26` | |
 | **SIM800L** | VCC | - | Powered by LM2596 tuned to **4.0V** |
 | **ESP32** | VIN | - | Powered by LM2596 tuned to **5.0V** |
 
